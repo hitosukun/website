@@ -1,0 +1,113 @@
+/* ---------- ヘッダー ---------- */
+#header_wrap {
+	margin: 0 10px;
+}
+#copy_title {
+  padding:20px 0;
+}
+/* --------- メイン --------- */
+#index_page main {
+	padding: 0;
+}
+main {
+	padding: 0;
+}
+/* ---------- グロナビ ---------- */
+#global_navi {
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	   -moz-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+.mobile {
+	display:block;
+}
+.pc {
+	display: none;
+}
+h1 {
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	padding-left: 0;
+}
+/* ---------- サムネイル一覧 ---------- */
+#grid_container {
+	-ms-grid-columns: (calc(100vw / 3))[3];
+	    grid-template-columns: repeat(3,-webkit-calc(100vw / 3));
+	    grid-template-columns: repeat(3,-moz-calc(100vw / 3));
+	    grid-template-columns: repeat(3,calc(100vw / 3));
+	grid-auto-rows: -webkit-calc(100vw / 3);
+	grid-auto-rows: -moz-calc(100vw / 3);
+	grid-auto-rows: calc(100vw / 3);
+}
+#grid_container > div , #grid_container a.thumbnail-link{
+	height: calc(100vw / 3);
+	width: calc(100vw / 3);
+}
+/* ---------- リストエリア ---------- */
+.list-box {
+	-ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+	-ms-grid-rows: 25px 40px 15px;
+	    grid-template-rows: 25px 40px 15px;
+	margin-bottom: 20px;
+}
+.list-box:last-child {
+	margin-bottom: 0px;
+}
+main > div.article  {
+	font-size: 0.7em;
+}
+main > div.lists {
+	font-size: 0.8em;
+}
+#index_page main > div {
+	font-size: 1em;
+}
+.info-area ,
+.breadcrumbs-area {
+	padding: 10px;
+	font-size: 1em;
+}
+.list-box h3 , .text-area , .status-area {
+	padding: 5px 10px;
+	line-height: 1.3em;
+}
+.lists {
+	margin: 0px auto 0;
+}
+.list-box-notext > h3 ,
+.list-box-notext > p {
+	-webkit-align-self: center;
+			-ms-flex-item-align: center;
+					align-self: center;
+  padding: 0 10px;
+}
+#latest_info {
+	/* max-width: 768px; */
+	margin: 50px 0 20px;
+}
+/* --------- スライダー ---------- */
+.swiper-container {
+	/* display: none; */
+}
+/* ---------- 記事 ---------- */
+#category_list {
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	   -moz-box-orient:vertical;
+	   -moz-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+}
+#category_list > section {
+	margin:30px 0;
+	padding:0 0 15px;
+}
+/* ---------- フッター ---------- */
+#footer_navi {
+	font-size: 0.8em;
+	padding: 10px;
+}

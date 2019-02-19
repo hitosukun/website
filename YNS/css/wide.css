@@ -1,0 +1,105 @@
+
+/* ---------- ヘッダー ---------- */
+#slider_title, #first_title, #second_title {
+  display: none;
+}
+#copy_title {
+  padding:70px 0;
+}
+/* ---------- 全体の幅 ---------- */
+#copy_title, #article_wrapper, #footer_navi{
+	max-width: 1440px;
+	margin: auto;
+}
+main {
+	padding: 0 20px;
+}
+/* ---------- グロナビ ---------- */
+.mobile {
+	display:none;
+}
+.pc {
+	display: block;
+}
+.mobile-caption {
+  display: none;
+}
+/* ---------- リストエリア ---------- */
+.list-container {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.list-box {
+  grid-template-rows: 35px 40px 25px;
+  grid-gap: 0;
+}
+.list-box > h3,
+.list-box > p {
+  padding: 0 30px 0 30px;
+}
+/* ---------- サムネイル一覧 ---------- */
+#grid_container {
+  -ms-grid-columns: (200px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 200px);
+	grid-auto-rows: 200px;
+  grid-gap: 40px;
+}
+#grid_container.article {
+	margin:40px auto 40px;
+}
+#grid_container > div , #grid_container a {
+  height: 200px;
+  width: 200px;
+}
+#grid_container > div {
+  -webkit-box-shadow:0 5px 10px rgba(0,0,0,0.5);
+   -moz-box-shadow:0 5px 10px rgba(0,0,0,0.5);
+        box-shadow:0 5px 10px rgba(0,0,0,0.5);
+}
+/* ---------- 記事 ---------- */
+.title_area h2 {
+  padding-left: 0;
+}
+/* .text {
+	padding:20px 0;
+} */
+.right {
+	/* padding-right: 0; */
+}
+/* ---------- アンカー ---------- */
+.stretched-underline{
+	-webkit-filter:saturate(50%);
+	        filter:saturate(50%);
+	color: darkcyan;
+	line-height:1.2em;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition:-webkit-filter 0.3s linear;
+	transition:-webkit-filter 0.3s linear;
+	-moz-transition:filter 0.3s linear;
+	-o-transition:filter 0.3s linear;
+	transition:filter 0.3s linear;
+	transition: filter 0.3s linear, -webkit-filter 0.3s linear;
+}
+.stretched-underline:link { color: darkcyan; }
+.stretched-underline:visited { color: darkcyan; }
+.stretched-underline:hover {
+	-webkit-filter:saturate(100%);
+	        filter:saturate(100%);
+}
+.stretched-underline::after{
+  content: "";
+  display: block;
+  width: 0;
+  -webkit-transition:width 0.3s;
+  -moz-transition:width 0.3s;
+  -o-transition:width 0.3s;
+  transition: width 0.3s;
+  border-bottom: 1px solid dimgray;
+}
+
+.stretched-underline:hover::after{
+  width: 100%;
+}
+.stretched-underline:active {
+	color: darkcyan;
+}

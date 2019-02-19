@@ -1,0 +1,60 @@
+
+#first_title, #second_title {
+  display: none;
+}
+#copy_title {
+  padding:50px 0 30px;
+}
+/* ---------- グロナビ ---------- */
+.mobile {
+	display:block;
+}
+.pc {
+	display: none;
+}
+h1 {
+	font-size: 30px;
+	letter-spacing: 0.3em;
+}
+/* ---------- サムネイル一覧 ---------- */
+#grid_container {
+  font-size: 0.8em;
+  grid-template-columns: repeat(4,calc(100vw / 4));
+	grid-auto-rows: calc(100vw / 4);
+}
+#grid_container > div , #grid_container a.thumbnail-link {
+  height: calc(100vw / 4);
+  width: calc(100vw / 4);
+}
+/* ---------- リストエリア ---------- */
+.list-container {
+	grid-template-columns: 1fr 1fr;
+}
+.text-area {
+  font-size: 0.85em;
+}
+#index_page .info-area {
+  padding-left: 10px;
+}
+.info-area ,
+.breadcrumbs-area {
+	padding: 10px 20px;
+}
+.title_area > h2 {
+  padding-left: 20px;
+}
+/* ---------- 記事 ---------- */
+#category_list {
+	flex-direction:column;
+}
+.photo {
+  display: flex;
+  justify-content:center;
+}
+#category_list > section {
+	margin:30px 0;
+	padding:0 0 15px;
+}
+.photo > img {
+  	max-height: calc(100vw * 2/3);
+}
